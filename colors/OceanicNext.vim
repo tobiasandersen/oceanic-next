@@ -234,9 +234,16 @@ call <sid>hi("csContextualStatement",   s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("csNewDecleration",        s:gui08, "", s:cterm08, "", "") "}}}
 
 " CSS highlighting
-call <sid>hi("cssBraces",      s:gui05, "", s:cterm05, "", "") "{{{
-call <sid>hi("cssClassName",   s:gui0E, "", s:cterm0E, "", "")
-call <sid>hi("cssColor",       s:gui0C, "", s:cterm0C, "", "") "}}}
+call <sid>hi("cssBraces",       s:gui05, "", s:cterm05, "", "") "{{{
+call <sid>hi("cssClassName",    s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("cssDimensionProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssBackgroundProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssPositioningProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssBorderProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssFontProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssTextProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssBoxProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssColor",        s:gui0C, "", s:cterm0C, "", "") "}}}
 
 " Diff highlighting
 call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "") "{{{
@@ -292,7 +299,8 @@ call <sid>hi("xmlEndTag",   s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("xmlTag",      s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("xmlEqual",    s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("xmlAttrib",   s:gui0E, "", s:cterm0E, "", "italic")
-call <sid>hi("xmlTagName",  s:gui08, "", s:cterm08, "", "") "}}}
+call <sid>hi("xmlTagName",  s:gui08, "", s:cterm08, "", "")
+call <sid>hi("xmlEndTagName", s:gui08, "", s:cterm08, "", "") "}}}
 
 " Markdown highlighting
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "") "{{{
