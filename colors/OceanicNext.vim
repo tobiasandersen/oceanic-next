@@ -243,6 +243,8 @@ call <sid>hi("cssBorderProp",   s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("cssFontProp",   s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("cssTextProp",   s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("cssBoxProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssColorProp",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("cssTransitionProp",   s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("cssColor",        s:gui0C, "", s:cterm0C, "", "") "}}}
 
 " Diff highlighting
