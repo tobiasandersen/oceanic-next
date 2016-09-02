@@ -1,20 +1,20 @@
 " GUI color definitions
-let s:gui00 = '141e23' "{{{
-let s:gui01 = '343d46'
-let s:gui02 = '4f5b66'
-let s:gui03 = '65737e'
-let s:gui04 = 'a7adba'  
-let s:gui05 = 'c0c5ce'  
-let s:gui06 = 'cdd3de'  " Light green (grey)
-let s:gui07 = 'd8dee9'  " Light blue (grey)
-let s:gui08 = 'ec5f67'  " Red
-let s:gui09 = 'f99157'  " Orange
-let s:gui0A = 'fac863'  " Yellow
-let s:gui0B = '99c794'  " Green
-let s:gui0C = '5fb3b3'  " Turquoise
-let s:gui0D = '6699cc'  " Blue
-let s:gui0E = 'BC7DB3'  " Purple
-let s:gui0F = 'ab7967'  " Brown
+let s:gui00 = '152028' "{{{
+let s:gui01 = '272E37'
+let s:gui02 = '3E4954'
+let s:gui03 = '52606C'
+let s:gui04 = '969DAD'  
+let s:gui05 = 'B3B8C4'  
+let s:gui06 = 'C2C9D7'  " Light green (grey)
+let s:gui07 = 'CFD6E4'  " Light blue (grey)
+let s:gui08 = 'E74455'  " Red
+let s:gui09 = 'F87C3D'  " Orange
+let s:gui0A = 'F9BE44'  " Yellow
+let s:gui0B = '87BF7F'  " Green
+let s:gui0C = '4CA6A5'  " Turquoise
+let s:gui0D = '5285C4'  " Blue
+let s:gui0E = 'B97CBA'  " Purple
+let s:gui0F = '9B6552'  " Brown
 let s:guiWhite = 'ffffff' "}}}
 
 
@@ -284,16 +284,30 @@ call <sid>hi("javaScriptClassName",       s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("javaScriptClassSuperName",  s:gui08, "", s:cterm08, "", "")
 call <sid>hi("javaScriptEndColons",  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("javaScriptIdentifier",      s:gui08, "", s:cterm08, "", "")
-"call <sid>hi("jsBraces",          s:gui09, "", s:cterm09, "", "")
-call <sid>hi("jsFunction",        s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("jsBlock",          s:gui05, "", s:cterm05, "", "")
+" call <sid>hi("jsBraces",          s:gui09, "", s:cterm09, "", "")
+call <sid>hi("jsArrowFunction",   s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("jsObjectBraces",    s:guiWhite, "", s:cterm09, "", "")
+call <sid>hi("jsFunction",        s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("jsClassKeywords",   s:gui0A, "", s:cterm0A, "", "")
+call <sid>hi("jsClassDefinition", s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("jsClassProperty",   s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("jsClassMethodType", s:gui05, "", s:cterm05, "", "")
+call <sid>hi("jsReturn",          s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("jsModuleDefault",   s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("jsModuleKeywords",  s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("jsFuncName",        s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("jsDecorator",       s:gui0C, "", s:cterm0C, "", "")
+call <sid>hi("jsDecoratorFunction", s:gui08, "", s:cterm08, "", "")
 "call <sid>hi("jsParens",          s:gui0C, "", s:cterm0C, "", "")
-"call <sid>hi("jsFuncCall",        s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("jsFuncCall",        s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("jsStringS",         s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("jsSuper",           s:gui08, "", s:cterm08, "", "")
 call <sid>hi("jsThis",           s:gui08, "", s:cterm08, "", "")
 call <sid>hi("jsObjectKey",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("jsModules",         s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("jsModuleWords",     s:gui0C, "", s:cterm0C, "", "")
+call <sid>hi("jsModuleOperators", s:gui0E, "", s:cterm0E, "", "")
 call <sid>hi("jsNoise",           s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("jsGlobalObjects",   s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("javaScriptNumber",  s:gui09, "", s:cterm09, "", "") "}}}
